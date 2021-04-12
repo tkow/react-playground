@@ -30,4 +30,4 @@ https://typescript-jp.gitbook.io/deep-dive/getting-started
 
 ## 目次
 
-
+[開発環境を整える](./docs/step1/開発環境を整える.md)
