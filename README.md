@@ -15,7 +15,7 @@ https://saruwakakun.com/html-css/basic
 
 ### Node.jsの前提知識
 
-https://qiita.com/tkow/items/9da7062f9bfa99e848c3
+https://qiita.com/tkow/items/69728531b922f288c7a5
 
 ### Typescriptの基礎知識
 
@@ -37,3 +37,5 @@ Node.jsのライブラリはnode_modulesという名称ですが複数のnode_mo
 ## 目次
 
 [開発環境を整える](./docs/step1/開発環境を整える.md)
+
+[Reactのプロジェクト構成について](./docs/step2/Reactのプロジェクト構成について.md)
