@@ -21,6 +21,10 @@ https://qiita.com/tkow/items/69728531b922f288c7a5
 
 https://typescript-jp.gitbook.io/deep-dive/getting-started
 
+### ドットインストールの講座
+
+https://dotinstall.com/lessons/basic_nodejs
+https://dotinstall.com/lessons/basic_reactjs
 
 ## 学習の仕方
 
@@ -39,3 +43,5 @@ Node.jsのライブラリはnode_modulesという名称ですが複数のnode_mo
 [開発環境を整える](./docs/step1/開発環境を整える.md)
 
 [Reactのプロジェクト構成について](./docs/step2/Reactのプロジェクト構成について.md)
+
+[コンポーネントを作る](./docs/step3/コンポーネントを作る.md)
