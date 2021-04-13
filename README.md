@@ -30,8 +30,8 @@ https://dotinstall.com/lessons/basic_reactjs
 
 このチュートリアルはReactを実装していく上で身につけるべき考え方とReact関連ツールの利用方法を理解する事をゴールとして章立てして構成しています。
 最終成果物は[lesson-chat](./lesson-chat)にありますが、それぞれのツールの使い方の事例毎に興味がある所をかいつまんで読んでいけるように構成しました。
-また、目次通りにステップを踏む事でmasterブランチのlesson-chatを構築できるように構成してあります。
-深く理解したい方はtemplateブランチを実際に手を動かしながら練習してみてください。
+また、目次通りにステップを踏む事でmasterブランチのlesson-chatを構築できるように構成していく予定です。
+深く理解したい方は実際に手を動かしながら練習してみてください。
 
 ## 注意
 
@@ -40,8 +40,32 @@ Node.jsのライブラリはnode_modulesという名称ですが複数のnode_mo
 
 ## 目次
 
+### 基礎編
+
 [開発環境を整える](./docs/step1/開発環境を整える.md)
 
 [Reactのプロジェクト構成について](./docs/step2/Reactのプロジェクト構成について.md)
 
 [コンポーネントを作る](./docs/step3/コンポーネントを作る.md)
+
+[テストを書く](./docs/step4/テストを書く.md)
+
+[UIライブラリを使う](./docs/step5/UIライブラリを使う.md)
+
+[コンポーネントスタイリング](./docs/step6/コンポーネントスタイリング.md)
+
+[ステートマネジメント](./docs/step7/ステートマネジメント.md)
+
+### 応用編
+
+[アトミックデザイン](./docs/step8/アトミックデザイン.md)
+
+[ルーティング](./docs/step9/ルーティング.md)
+
+[Redux Async Pattern](./docs/step10/Redux_Async_Pattern.md)
+
+[パフォーマンス計測](./docs/step11/パフォーマンス計測.md)
+
+[E2Eテスト](./docs/step12/E2Eテスト.md)
+
+[Suspense](./docs/step13/Suspense.md)
