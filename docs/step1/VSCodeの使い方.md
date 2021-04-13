@@ -31,6 +31,10 @@ keyは同時入力するものを`\`\``で囲っています。クォートの�
     - `Cmd + k` + `Cmd + s`でキーバインドの設定ができます
     - `Cmd + ,`でエディタ設定を開きます
 
+## VSCodeをターミナル上から起動できるようにする
+
+Shell Command: install 'code' in PATHを実行すると、codeコマンドがターミナルから使えるようになります。これで、code ${directory名 or file名}を実行することでterminalを介してvscodeをOpenすることができるようになります。
+
 
 ## VSCodeのプラグイン
 
