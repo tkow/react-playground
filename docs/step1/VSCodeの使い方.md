@@ -395,5 +395,61 @@ VSCodeにはプラグイン機能が充実しておりインストールする�
 
   ```
 
+## workspace
+
+vscodeは開いているdirectory配下をworkspaceとして認識します。
+workspace内のトップディレクトリに.vscodeというディレクトリに指定のファイルを置くとworkspace内でvscodeの設定を読み込むことができます。
+
+https://code.visualstudio.com/docs/getstarted/settings
+
+### settings.json
+
+コマンドパレットでPreferences: Open Work Spaceで開いてみます。この時、UserあるいはWorkSpaceの設定が開かれます。
+UserとWorkSpaceの設定はそれぞれ共通ですが、WorkSpaceの設定はUserの設定よりも優先されます。WorkSpaceの設定を変更すると現在開いているWorkspaceのdirectory内に.vscode/settings.jsonというファイルが作成されます。このファイルを共有することで、チーム全体で必要なvsoceの設定を共有することができます。手動でこのファイルを編集することもできます。
 
 
+### settings.json
+
+コマンドパレットでPreferences: Open Work Spaceで開いてみます。この時、UserあるいはWorkSpaceの設定が開かれます。
+UserとWorkSpaceの設定はそれぞれ共通ですが、WorkSpaceの設定はUserの設定よりも優先されます。WorkSpaceの設定を変更すると現在開いているWorkspaceのdirectory内に.vscode/settings.jsonというファイルが作成されます。このファイルを共有することで、チーム全体で必要なvsoceの設定を共有することができます。手動でこのファイルを編集することもできます。
+
+### snippetファイル
+
+.vscode/*.code-snippetsという命名でファイルを作成するとworkspace内でsnippetを使えるようになります。（vscode pluginとしても公開できます）
+定義はjson形式で以下のような形で定義します。（*snippet*: 素早くコードを書くためのテンプレートの事）
+```
+{
+    "Initialize React Functional Component": {
+		"prefix": "itfc",
+		"body": [
+			"import $2 from $1",
+			"",
+			"export type ${1:Component}Props = {",
+			"  $2",
+			"}",
+			"",
+			"function ${1:Component} (props:${1:Component}Props): React.ReactElement<${1:Component}Props> {",
+			"  return $3;",
+			"};",
+			"",
+			"export default ${1:Component};",
+			""
+		],
+		"description": "Create a React Stateless Functional Component."
+	},
+}
+```
+top levelのkeyにはsnippetのID、prefixにはサジェスト機能で使用する際に入力するコマンド、bodyにはスニペットを呼び出した時にカーソル位置からペーストしたい文字列と指定の位置をTabを押していく事で${n}番目の位置に順番に入力カーソルを移動させるタブストップと呼ばれるプレースホルダー、descriptionにはsnippetの説明を定義できます。タブストップにはデフォルト値を設定することができてtabで入力をスキップすることでデフォルトの値をそのまま使うことができます。また、デフォルト値を入れておくことでユーザーがスニペットを呼び出した時に入力すべきものを明確にすることができます。よく使うコードは登録しておくと良いでしょう。
+### その他
+
+その他共有できる設定については以下も参照してみてください。
+
+https://qiita.com/frozenbonito/items/130f1fce5d3f97997d81
+
+
+### Settings Sync
+
+エディタの設定を複数台のマシンで共有するためにvsocodeにはSettings Syncというツールがデフォルトで入っています。
+これはGithuのGistというコード共有サービスを利用して、現在のユーザーのエディタ設定を保存して、他のマシンからダウンロードできるようにするという仕組みで動いています。
+デフォルトではpublicな状態で保存されますがSetting Sync Extensionを用いるとPrivate Gistで管理することもできます。
+https://code.visualstudio.com/docs/editor/settings-sync
