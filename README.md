@@ -21,6 +21,11 @@ https://qiita.com/tkow/items/69728531b922f288c7a5
 
 https://typescript-jp.gitbook.io/deep-dive/getting-started
 
+
+### React Official Site
+
+https://ja.reactjs.org/docs/getting-started.html
+
 ### ドットインストールの講座
 
 https://dotinstall.com/lessons/basic_nodejs
