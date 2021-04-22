@@ -7,7 +7,7 @@
 
 このチュートリアルではNode.js, CSS, HTMLの基礎知識を持っていることを前提としています。
 また、Typescriptを利用するため、初歩的な静的型付け言語の知識を必要とします。
-もし、これらの知識に不安がある場合は以下のソースなどで予習を行ってください。
+もし、これらの知識に不安がある場合は以下のソースなどで知識の補強を行ってください。
 
 ### HTML/CSSの基礎知識
 
@@ -53,24 +53,24 @@ Node.jsのライブラリはnode_modulesという名称ですが複数のnode_mo
 
 [コンポーネントを作る](./docs/step3/コンポーネントを作る.md)
 
-[テストを書く](./docs/step4/テストを書く.md)
+[テストを書く](./docs/step4/テストを書く.md)[WIP]
 
-[UIライブラリを使う](./docs/step5/UIライブラリを使う.md)
+[UIライブラリを使う](./docs/step5/UIライブラリを使う.md)[WIP]
 
-[コンポーネントスタイリング](./docs/step6/コンポーネントスタイリング.md)
+[コンポーネントスタイリング](./docs/step6/コンポーネントスタイリング.md)[WIP]
 
-[ステートマネジメント](./docs/step7/ステートマネジメント.md)
+[ステートマネジメント](./docs/step7/ステートマネジメント.md)[WIP]
 
 ### 応用編
 
-[アトミックデザイン](./docs/step8/アトミックデザイン.md)
+[アトミックデザイン](./docs/step8/アトミックデザイン.md)[WIP]
 
-[ルーティング](./docs/step9/ルーティング.md)
+[ルーティング](./docs/step9/ルーティング.md)[WIP]
 
-[Redux Async Pattern](./docs/step10/Redux_Async_Pattern.md)
+[Redux Async Pattern](./docs/step10/Redux_Async_Pattern.md)[WIP]
 
-[パフォーマンス計測](./docs/step11/パフォーマンス計測.md)
+[パフォーマンス計測](./docs/step11/パフォーマンス計測.md)[WIP]
 
-[E2Eテスト](./docs/step12/E2Eテスト.md)
+[E2Eテスト](./docs/step12/E2Eテスト.md)[WIP]
 
-[Suspense](./docs/step13/Suspense.md)
+[Suspense](./docs/step13/Suspense.md)[WIP]
