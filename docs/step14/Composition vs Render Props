@@ -1,0 +1,28 @@
+```tsx
+(props: {aProps?: Aprops,bProps?:Bprops, ComponentA: ReactElement, ComponentB: ReactElement}) => (
+    <Container>
+　     {ComponentA || <DefaultComponentA {...aProps}>}
+　     {ComponentB || <DefaultComponentB {...bProps}>}
+    </Container>
+)
+```
+こちらは完全な動的制御が可能です。DefaultComponentを使いたくない場合はDefaultComponentを使うようにFallDown制御ができます。厳密な型付けがしたい場合はTypedUnionなどで工夫しましょう。
+
+```tsx
+type AProps = {aProps: Props} | {ComponentA: ReactElement} 
+type BProps = {bProps: Props} | {ComponentB: ReactElement} 
+type Props = AProps & BProps
+```
+
+
+```tsx
+(props: {
+ renderAProps?: (prop: InnerAProps) => ReactElement
+ renderBProps:? (prop: InnerAProps) => ReactElement
+}) => (
+    <Container>
+　     {renderAProps?.(innerAProps) || <DefaultComponentA {...innerAProps}>}}
+　     {renderBProps?.(innerBProps) || <DefaultComponentA {...innerBProps}>}
+    </Container>
+)
+```
